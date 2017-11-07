@@ -5,7 +5,7 @@ import sys,re,time,getopt,urllib2,urllib,json,pprint
 sys.path.append('/gpfs/users/yanghao/software/anaconda2/lib/python2.7/site-packages')
 
 usage ='''---------------------------------------------------
-根据优乐编号生成血液游离DNA甲基化检测报告(docx格式)
+根据样本编号生成血液游离DNA甲基化检测报告(docx格式)
 
 使用方法
 	./meth.report.generator.py [options]
@@ -61,7 +61,7 @@ if not out_docx:
 	print usage
 	sys.exit(1)
 
-#根据用户提供的优乐编号，去获取基本信息
+#根据用户提供的样本编号，去获取基本信息
 try:
 	post_data  = urllib.urlencode({})
 	req = urllib2.urlopen('http://e-project.leanapp.cn/api/project/findUserInfo/' + euler, post_data)
