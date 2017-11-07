@@ -14,7 +14,7 @@ docx
 使用方法
         ./meth.report.generator.py [options]
         -h      帮助信息
-        -e      优乐编号(必须输入)
+        -e      样本编号(必须输入)
         -p      百分比参考分布图路径
         -t      肺癌总百分比
         -a      肺腺癌特异百分比
